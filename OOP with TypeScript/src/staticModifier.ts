@@ -13,7 +13,7 @@ class Ride {
     Ride._activeRides--;
   }
 
-  static get activeRides() {
+  static get activeRides(): number {
     return Ride._activeRides;
   }
 }

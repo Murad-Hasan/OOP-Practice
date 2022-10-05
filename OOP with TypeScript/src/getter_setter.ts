@@ -16,9 +16,9 @@ class GetterSetter {
 const Murad = new GetterSetter("Murad", 200);
 console.log(Murad.getBalance);
 
-/* 
-* Set balance 
-*/
+/*
+ * Set balance
+ */
 Murad.setBalance = 300;
 
 console.log(Murad.getBalance);

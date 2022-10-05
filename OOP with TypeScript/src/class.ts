@@ -81,5 +81,9 @@ class Account1 {
 }
 
 let account1 = new Account1(1, "John", 200, "MURAD");
-console.log(account1.nickname);
+let account2 = new Account1(1, "Murad", 200);
+console.log("account1 with nickname argument:", account1.nickname);
+console.log("account2 without nickname argument: ", account2.nickname);
 console.log(Math.round(account1.getTax()));
+
+

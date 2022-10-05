@@ -31,7 +31,7 @@ class Account1 {
         this._balance += amount;
     }
     _calculateTax() {
-        return this._balance * 0.9;
+        return (this._balance * 0.9) / 100;
     }
     getTax() {
         return this._calculateTax();
@@ -40,7 +40,9 @@ class Account1 {
         return this._balance;
     }
 }
-let account1 = new Account1(1, "John", 0, "MURAD");
-console.log(account1.nickname);
-console.log(account1.getTax());
+let account1 = new Account1(1, "John", 200, "MURAD");
+let account2 = new Account1(1, "Murad", 200);
+console.log("account1 with nickname argument:", account1.nickname);
+console.log("account2 without nickname argument: ", account2.nickname);
+console.log(Math.round(account1.getTax()));
 //# sourceMappingURL=class.js.map

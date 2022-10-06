@@ -10,7 +10,7 @@ class Person {
   }
 }
 /*
-  * Inheritance
+ * Inheritance
  */
 class Student extends Person {
   constructor(public studentId: number, firstName: string, lastName: string) {
